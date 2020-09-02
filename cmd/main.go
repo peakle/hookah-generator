@@ -10,9 +10,7 @@ import (
 
 var (
 	// Version current tag version
-	Version = "0"
-	// CommitID of tag
-	CommitID = "0"
+	Version  = "0"
 	commands = []cli.Command{
 		{
 			Name:        "hg-server",
