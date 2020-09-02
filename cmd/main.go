@@ -4,6 +4,7 @@ import (
 	"fmt"
 	"os"
 
+	"github.com/peakle/hookah-generator/pkg/server"
 	"github.com/urfave/cli"
 )
 
@@ -15,8 +16,8 @@ var (
 	commands = []cli.Command{
 		{
 			Name:        "hg-server",
-			ShortName:   "gstore",
-			Description: "start server for parse apps",
+			ShortName:   "hgs",
+			Description: "start server",
 			Action:      server.StartServer,
 			Category:    "server",
 		},
